@@ -5,10 +5,8 @@ program Concurrent_P_1;
  INFORMATION SCIENCE
  CALIFORNIA INSTITUTE OF TECHNOLOGY
  PASADENA, CALIFORNIA 91125
-
  PDP 11/45 CONCURRENT PASCAL
  COMPILER PASS 1: LEXICAL ANALYSIS
-
  OCTOBER 1974
 
  2023-2024 M.P. Úprava pro Delphi
@@ -171,10 +169,11 @@ procedure getreal(dual: splitreal;
   var value: real);
 begin
   dual.split := true;
+  value := dual.a;
  { get(dual.b);
   get(dual.c);  }
   dual.split := false;
-  value := dual.a
+
 end;
 
 PROCEDURE STORE_TEST (ARG: INTEGER);
